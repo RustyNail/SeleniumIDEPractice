@@ -1,0 +1,144 @@
+{
+  "id": "56218a28-813a-49f6-b7a5-3c6f3d2ffd86",
+  "version": "2.0",
+  "name": "ReserveAppTests",
+  "url": "http://example.selenium.jp/",
+  "tests": [{
+    "id": "416e94d4-65bc-47ba-9edc-b6ec392ce6e5",
+    "name": "(Practice1) Initial view of reservation page",
+    "commands": [{
+      "id": "cedf1105-5eec-4422-906b-e4af7b8e30d8",
+      "comment": "",
+      "command": "open",
+      "target": "/reserveApp_Renewal/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c611e13a-02c6-4880-9970-2f9a79d1944f",
+      "comment": "",
+      "command": "//verifyValue",
+      "target": "css=#datePick",
+      "targets": [],
+      "value": "[TODO1 : 期待結果(宿泊開始日)の入力]"
+    }, {
+      "id": "06bbc99c-7760-4b01-aceb-eb075f39c1be",
+      "comment": "",
+      "command": "verifySelectedValue",
+      "target": "css=#headcount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "8cce654d-98a9-4d41-bf07-281b8abc14b8",
+      "comment": "",
+      "command": "//verifyValue",
+      "target": "[TODO2 : 朝食ありラジオボタン要素の指定]",
+      "targets": [],
+      "value": "on"
+    }, {
+      "id": "9b07e540-a424-4996-899b-beb487fb0bf0",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "css=#plan_a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e62583d1-e46f-48b8-aa4f-ef5a6321f38b",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "css=#plan_b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f7de27a-83d9-446a-a116-e57c60286c37",
+      "comment": "[TODO3 : 宿泊者名の検証]",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04386294-221c-4def-bedf-606d7491389b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cab4867e-be36-49cb-95d2-ff687e0ea50b",
+    "name": "(Practice2) Reservation for tomorrow",
+    "commands": [{
+      "id": "f40b806b-9a95-4a52-8bc5-88e6de5aab4a",
+      "comment": "",
+      "command": "open",
+      "target": "/reserveApp_Renewal/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "653a2d0d-6bd8-4c91-8ff9-132ef1d26e23",
+      "comment": "[TODO1] 宿泊日(2022/11/30)の入力",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e673d0f2-8ce9-4559-a3b5-3b74ac550adf",
+      "comment": "[TODO2] 宿泊人数の入力",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59896f25-ed42-40ac-9c05-aefa96f47220",
+      "comment": "[TODO3] 朝食バイキングありを選択",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89bde790-1768-46fd-9ba4-b7a2c4d3960f",
+      "comment": "[TODO4] 予約者名の入力",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6152042-91e0-4e36-b342-191b19d8367d",
+      "comment": "[TODO5] 「昼からチェックインプラン」を選択 ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "846b0e0d-5aad-4d21-bf67-4fc6846f7798",
+      "comment": "[TODO6] 「お得な観光プラン」を選択 ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62ece9cd-6d9e-4175-85fc-4194125b8446",
+      "comment": "",
+      "command": "click",
+      "target": "css=#agree_and_goto_next",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6ee3303-39c0-4f1a-89c2-95fe91f38a40",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0db235ed-e994-461f-bcc0-98784c8f16cf",
+    "name": "ReserveApp",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["416e94d4-65bc-47ba-9edc-b6ec392ce6e5", "cab4867e-be36-49cb-95d2-ff687e0ea50b"]
+  }],
+  "urls": ["http://example.selenium.jp/reserveApp_Renewal/", "http://example.selenium.jp/"],
+  "plugins": []
+}
